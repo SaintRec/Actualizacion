@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <link rel="shortcut icon" href="./img/67.ico" />
+    
+    <title>TiagoLex</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <!-- <link href="/styles.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="chat">
+        <div class="chat-title">
+            <center>
+            <h1>TiagoLex</h1>
+            <h2>Anonimous</h2>    
+            </center>
+            
+            <figure class="avatar">
+                <img src="./img/index.png" />
+            </figure>
+        </div>
+
+        <div class="messages">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <div class="message-box">
+        <input id="handle" type="text" placeholder="Handle" size="3"/>
+        <textarea id="message" type="text" class="message-input" placeholder="Message" /></textarea>
+        <button id="send">Enviar</button>    
+        </div>
+        
+    </div>
+
+    <div class="bg"></div>
+</body>
+<script src="/chat.js"></script>
+
+</html>
